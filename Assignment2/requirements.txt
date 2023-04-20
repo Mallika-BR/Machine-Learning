@@ -1,0 +1,7 @@
+The  “dataset/” you will find two csv and a txt files:
+baby-weights-dataset.csv
+It has 101400 rows (samples) with 37 columns (variables). Each sample represents a case of a new-born. Very last column is "BWEIGHT", that tells the true weight of the new-born (in lbs unit). Actually, this needs to be considered as the target variable here.
+data-description.txt
+Here, you will find the names of the 37 variables used in the dataset above. And, the source of the dataset did not offer me description of every single of them. But, after studying about them, I could elaborate only few of them. Please pardon my laziness. Okay, this file contains few descriptions for the variables. All the rest are mostly talking about the Mother's medical history and all. No big deal, I guess, for you to work with these variables without knowing their meaning.
+judge-without-labels.csv
+This is an interesting file. It contains new samples: additional 2000 rows with 36 columns (without the BWEIGHT target column). Once again, this should be part of the training, as there are no ground truth target labels, right? Once the training is complete with the dataset provided above, you may want to apply your prediction algorithm to predict BWEIGHT values of these 2000 samples. 
